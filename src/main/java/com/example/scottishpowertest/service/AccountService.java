@@ -16,13 +16,9 @@ import java.util.*;
 
 @Service
 public class AccountService {
-
-
     private final ModelMapper modelMapper = new ModelMapper();
     private final static Logger log = LoggerFactory.getLogger(SLF4JLogger.class);
-
     private final ReadingService readingService;
-
     private final AccountRepository accountRepository;
 
     AccountService(final AccountRepository accountRepository, final ReadingService readingService) {

@@ -57,7 +57,6 @@ public class ReadingService {
         }
     }
 
-
     public List<ReadingDto> convertReadingsToDto(ReadingType readingType, int accountId){
 
         final List<Reading> accountReadings = readingRepository.findAllByAccountIdAndReadingTypeOrderByDateAsc(accountId, readingType);
@@ -123,5 +122,4 @@ public class ReadingService {
         log.info(String.format("Created reading " + reading));
         return reading;
     }
-
 }

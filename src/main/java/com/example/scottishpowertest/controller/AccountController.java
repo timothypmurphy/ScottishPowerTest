@@ -11,11 +11,8 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping(path="/api/smart/reads")
 public class AccountController {
-
     private static final Logger log = LoggerFactory.getLogger(AccountController.class);
-
     private final AccountService service;
-
     public AccountController(AccountService service) {
         this.service = service;
     }
@@ -29,8 +26,6 @@ public class AccountController {
     @PostMapping()
     final ResponseEntity<String> addReading(@Valid @RequestBody final AccountDto readings){
         log.info(String.format("Received readings " + readings));
-
-
         service.saveReadingsToAccount(readings);
         return ResponseEntity.ok("Readings are valid");
     }
