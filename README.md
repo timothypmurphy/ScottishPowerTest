@@ -2,7 +2,7 @@
 
 This project is a RESTful web service, creating in Spring Boot, designed to retrieve and add smart meter readings to a database.
 Some assumptions about the data structure have been made and those will be detailed below.
-This project come with a suite of Unit and Acceptance tests to ensure the acceptance criteria are met.
+This project come with a suite of Unit and BDD tests.
 
 ## Table of Contents
 1. [Initial Design](#initial-design)
