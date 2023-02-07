@@ -126,6 +126,8 @@ quickly abandoned this idea when considering the importance of the order of my A
 The application is run from the ScottishPowerTestApplication class and when booted up the initDatabase method is called in LoadDatabase class,
 which adds a few accounts and readings to the DB. If you wish to add other accounts or readings to the DB then they can be added here.
 
+The service can be accessed on your local network on port 8081.
+
 NOTE: validation is not carried out on entities that are added via this method.
 
 ## Testing
@@ -136,7 +138,7 @@ potential scenarios that may arise.
 My unit testing uses JUnit and Mockito. Currently, I only have unit tests for the two service classes, but these classes hold most of the code
 and all the logic in the project. I'm quite pleased with the different scenarios I've covered in these unit tests, checking for exceptions being
 thrown as well as testing different branches that the individual methods can take. I would like to have completed a full unit test suite, covering
-some of the other classes in the application. I also think the tests I have written are not the cleanest, so given 
+some other classes in the application. I also think the tests I have written are not the cleanest, so given 
 more time I would make them more readable.
 
 ### BDD Testing
