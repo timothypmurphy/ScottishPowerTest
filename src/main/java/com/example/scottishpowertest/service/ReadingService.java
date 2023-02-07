@@ -83,20 +83,6 @@ public class ReadingService {
 
     public ReadingDto convertToDto(Reading reading) {
         ReadingDto readingDto = modelMapper.map(reading, ReadingDto.class);
-
-//        LocalDate previousDate = previousReading.getDate();
-//        int previousReadingAmount = previousReading.getReading();
-//        LocalDate firstDate = firstReading.getDate();
-//        int firstReadingAmount = firstReading.getReading();
-//
-//        long elapsedSinceFirstRead = DAYS.between(firstDate, reading.getDate());
-//        long usageSinceFirstRead = reading.getReading() - firstReadingAmount;
-//
-//        long averageDailyUsage = elapsedSinceFirstRead > 0 ? usageSinceFirstRead / elapsedSinceFirstRead : usageSinceFirstRead;
-//
-//        readingDto.setUsageSinceLastRead(reading.getReading() - previousReadingAmount);
-//        readingDto.setPeriodSinceLastRead(DAYS.between(previousDate, reading.getDate()));
-//        readingDto.setAvgDailyUsage(averageDailyUsage);
         return readingDto;
     }
 

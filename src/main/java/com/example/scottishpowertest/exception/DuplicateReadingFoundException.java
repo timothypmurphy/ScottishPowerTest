@@ -6,10 +6,6 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 public class DuplicateReadingFoundException extends RuntimeException{
-
-//    public static DuplicateReadingFoundException none() {
-//        return new DuplicateReadingFoundException();
-//    }
     public DuplicateReadingFoundException(ReadingType readingType, LocalDate date){
         super(String.format("Duplicate reading of type %s and date %s found for this account, see logs for more info", readingType, date.toString()));
     }
